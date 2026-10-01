@@ -70,9 +70,17 @@ gradient-inversion reconstruction in part 5 possible to verify.
   `fc.N_PARAMS`); nothing deep-learning-specific, by design — the point is the FL/privacy
   mechanics, not the model architecture.
 
-## Repo history note
+## Local additions (not part of the upstream course notebook)
 
-This repo was initialized here (scoped to this project folder) after being accidentally
-`git init`'d at the user's home directory (`~/.git`) in an earlier session. That stray home-dir
-repo still exists and tracking it as a separate (unrelated) cleanup item — see git log for
-context if it resurfaces.
+Two markdown cells were appended after the original 113 cells (part of this repo, not fetched
+from `eth-fdd-fs26/FDD-WE7-public`, so they won't appear if the notebook is ever re-synced
+against the upstream course repo):
+
+- **"Big picture - learning summary"** — a prose recap of the seven-part arc and its throughline
+  (moving the model instead of the data creates a new problem — what the update reveals — which
+  then has to be paid for explicitly as a privacy budget).
+- **"Diagram — the loop, the leak, and the fix"** — the same recap as a figure: broadcast →
+  per-bank local training → clip-and-noise gate → weighted aggregate → loop, with a boxed inset
+  showing what an *unprotected* update leaks. Embedded as a native Jupyter cell `attachment`
+  (`federated-loop-diagram.png`), so it renders in Jupyter/JupyterLab/Colab without external
+  links.
