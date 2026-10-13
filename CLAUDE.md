@@ -1,6 +1,6 @@
 # One Model, Four Banks — ETH FDD Week 7 project
 
-A single Jupyter notebook ([we7_project_federated_learning_student-cn.ipynb](we7_project_federated_learning_student-cn.ipynb))
+A single Jupyter notebook ([we7_project_federated_learning_student-cn-annotated-by-Claude.ipynb](we7_project_federated_learning_student-cn-annotated-by-Claude.ipynb))
 for week 7 of an ETH Zurich CAS course (repo `eth-fdd-fs26/FDD-WE7-public`, "FS26" = spring
 semester 2026). It teaches federated learning end to end using a scenario of four fictional
 banks that want one shared credit-risk model without pooling their customer records.
@@ -55,7 +55,7 @@ it to `sys.path`:
   missions.
 
 None of these files are checked into this repo; `src/` is git-ignored-by-absence and recreated
-by running the notebook's first cell. **The customer data is entirely synthetic** (14 standardized
+by running the notebook's first cell. **The customer data is entirely synthetic** (13 standardized
 features, generated from a known ground-truth rule `gen.TRUE_BETA`), which is what makes exact
 gradient-inversion reconstruction in part 5 possible to verify.
 
