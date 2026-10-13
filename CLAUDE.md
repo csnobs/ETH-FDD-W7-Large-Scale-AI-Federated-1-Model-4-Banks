@@ -72,7 +72,7 @@ gradient-inversion reconstruction in part 5 possible to verify.
 
 ## Local additions (not part of the upstream course notebook)
 
-Two markdown cells were appended after the original 113 cells (part of this repo, not fetched
+Three markdown cells were added to the original 113 (two appended at the end, one inside part 6), and the part-6 defence log was filled in (part of this repo, not fetched
 from `eth-fdd-fs26/FDD-WE7-public`, so they won't appear if the notebook is ever re-synced
 against the upstream course repo):
 
@@ -84,3 +84,11 @@ against the upstream course repo):
   showing what an *unprotected* update leaks. Embedded as a native Jupyter cell `attachment`
   (`federated-loop-diagram.png`), so it renders in Jupyter/JupyterLab/Colab without external
   links.
+- **"📝 Annotated walkthrough — Part 6 in one page"** — inserted directly after the Part 6
+  heading: an analogy-led table of batching / clipping / noise (what each achieves, what it
+  doesn't, who controls it), how ε is read, why per-bank ε differs, and why all three are
+  promises rather than controls.
+- **"✍️ Fill this in — your defence log"** (part 6) is answered: batch 32, cap 1.35, z = 2,
+  AUC 0.844. The numbers come from re-running the mission's own JS engine
+  (`missions/privacy.html` in the course repo) over every dial setting, not from clicking the
+  playground.
